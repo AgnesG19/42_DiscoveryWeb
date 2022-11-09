@@ -1,0 +1,19 @@
+table {
+    border-collapse:collapse;
+    border:solid 1px black;
+    border-spacing: 0px;
+    width:100%;
+}
+
+td {
+    border:solid 1px gray;
+    height: 7em;
+}
+td:first-of-type {
+    background-color: #00add8;
+    width: 50%;
+}
+td:last-of-type {
+    background-color: #ff3481;
+    width: 50%;
+}
