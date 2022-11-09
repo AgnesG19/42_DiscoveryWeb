@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset = «utf-8»>
+            <!--Necesario para hacer web Responsive--> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Responsive</title>
+
+            <!--Estilos de CSS-->
+                <!--td afectara a toda, en cambio con td:first solo a la primera-->
+            <style>
+                table {
+                    border-collapse:collapse;
+                    border:solid 1px black;
+                    border-spacing: 0px;
+                    width:100%;
+                }
+                
+                td {
+                    border:solid 1px gray;
+                    height: 7em;
+                }
+                td:first-of-type {
+                    background-color: #00add8;
+                    width: 50%;
+                }
+                td:last-of-type {
+                    background-color: #ff3481;
+                    width: 50%;
+                }
+                    
+            </style>
+
+
+        </head>
+        
+        <body>
+            <hr/>
+            <table> 
+                <tr>
+                    <td>
+                        <p>Celda 1</p>
+                    </td>
+                    <td>
+                        <p>Celda 2</p>
+                    </td>
+
+                </tr>   
+            </table>
+
+        </body>
+</html>        
