@@ -1,0 +1,74 @@
+body, html{
+    height: 100%;
+    margin: 0px;
+}
+
+/*******BLOQUE 1******/
+.parallax_contenedor1 {
+    /*imagen para el fondo con url de la web*/
+    background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?cs=srgb&dl=pexels-c%C3%A1tia-matos-1072179.jpg&fm=jpg&_gl=1*v9ljj7*_ga*NDAyNTg5MDIyLjE2NjgxNzExODg.*_ga_8JE65Q40S6*MTY2ODE3MTE4OS4xLjEuMTY2ODE3MTIwOC4wLjAuMA..);
+    height: 80%;
+
+    /*para que la imagen de bg se quede fija, se centre y no se repita*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /*Display flex para responsive en todos dispos. align y justify para centrar en este caso*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 20%;
+}
+h1 {
+    /*Le doy marg top 0 porque sino el h1 crea un margen solo*/
+    margin-top: 0px;
+    text-shadow: 2px 2px #ec0000;
+    
+}
+
+
+/******* BLOQUE 2 ******/
+.bloque_negro{
+    background-color: black;
+}
+.text2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20%;
+}
+
+/*******BLOQUE 3******/
+.parallax_contenedor2 {
+    /*imagen para el fondo con url de la web*/
+    background-image: url(https://mcdn.wallpapersafari.com/medium/5/37/5YA43a.jpg);
+
+    height: 60%;
+
+    /*para que la imagen de bg se quede fija, se centre y no se repita*/
+    background-attachment: fixed;
+    background-position: center;
+
+    /*PROBANDO COSAS DISTINTAS*/
+    background-repeat: repeat;
+}
+
+.text3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 20%;
+    
+}
+#h1_final {
+    /*Le doy marg top 0 porque sino el h1 crea un margen solo*/
+    margin-top: 0px;
+    text-shadow: 2px 2px #ec0000;
+}
