@@ -1,5 +1,5 @@
 # 42_DiscoveryWeb
-Ejercicios realizados en la 42 Discovery Web:
+Ejercicios realizados en la 42 Discovery Web de Barcelona:
 
  - CELL0: Shell de Apple
   - CELL1: HTML
