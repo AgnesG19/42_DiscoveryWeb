@@ -2,6 +2,6 @@
 Ejercicios realizados en la 42 Discovery Web de Barcelona:
 
  - CELL0: Shell de Apple
-  - CELL1: HTML
-   - CELL2: HTML+CSS
-    - CELL3: HTML+CSS+JAVASCRIPT
+ - CELL1: HTML
+ - CELL2: HTML+CSS
+ - CELL3: HTML+CSS+JAVASCRIPT
