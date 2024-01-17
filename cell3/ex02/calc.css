@@ -1,0 +1,58 @@
+/* "#" por el id y así no se llama "div" que puede llegar a confundir más adelante */
+body {
+    font-family: 'Franklin Gothic Medium';
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+/******** CAJA DE CALCULO ********/
+#calculo {
+  background-color: #bcbcbc;
+
+  margin: 3%;
+  width: 60%; 
+  border: 2px solid black;
+  padding: 10px; /* Añadir espacio interno */
+
+  font-family: 'Franklin Gothic Medium';
+}
+
+/******** CAJA DE OPERADORES ********/
+#operadores {
+    background-color: #bcbcbc;
+    margin: 3%;
+    width: 60%; 
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    
+}
+#operadores button {
+    width: 30px; 
+    height: 30px; 
+    margin: 5px; /* Margen entre los botones */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* boton redondeado */
+}
+
+/******** CAJA DE EJECUCION ********/
+#tryme {
+    background-color: #347936;
+    color: white;
+    border: none;
+  
+    padding: 10px 20px; /* dentro del boton (texto y margen) */
+    border-radius: 5px;
+
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    
+    display: inline-block;
+   
+    margin: 4px 2px;
+    cursor: pointer;
+}

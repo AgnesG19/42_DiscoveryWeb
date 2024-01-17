@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Necesario para hacer web Responsive--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Vinculo a la pag CSS-->
+    <link href="calc.css" rel="stylesheet">
+    <!--Vinculo a la pag JS--> 
+    <script src="calc.js"></script>
+
+    <title>cell02 - It's over 9000</title>  
+</head>
+<body>
+    <!-- Caja texto, muestra los números insertados-->
+    <div id="calculo" class="clearfix">
+        <label for="numeros">Añade números:</label>
+        <!-- "input" nos permite escribir ahí directamente-->
+            <input type="text" id="numeros" placeholder="...">
+    </div>
+
+    <!-- Caja select, muestra lista de los operadores a usar-->
+    <div id="operadores" >
+        <button value="add">+</button>
+        <button value="substract">-</button>
+        <button value="multiply">*</button>
+        <button value="divide">/</button>
+        <button value="percentage">%</button>
+    </div>
+
+    <!-- Caja ejecutar, muestra el resultado-->
+    <div id="ejecutar" >
+        <button id="tryme"  onclick="">Try me!</button>
+    </div>
+
+</body>
+
+</html>
