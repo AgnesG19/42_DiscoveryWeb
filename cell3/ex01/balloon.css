@@ -1,0 +1,14 @@
+/* "#balloon" por el id y así no se llama "div" que puede llegar a confundir más adelante */
+
+#balloon {
+    height: 200px;
+    width: 200px;
+
+    /*Para que el borde sea redondo*/
+    border-radius: 50%;
+
+    background-color: red;
+    
+    /*cursor cambia a modo click (queda más visual para el usuario*/
+    cursor: pointer;
+}
