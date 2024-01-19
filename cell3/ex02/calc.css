@@ -1,21 +1,45 @@
 /* "#" por el id y así no se llama "div" que puede llegar a confundir más adelante */
+
+/* root se usa en modo generico para agrupar */
+:root {
+    /* Esto son variables */
+    --color-fondo: #bcbcbc;
+    --color-border: black;
+    --color-boton:  #ecedec;
+    --font-family: 'Franklin Gothic Medium';
+    --padding-general: 10px;
+  }
+
 body {
-    font-family: 'Franklin Gothic Medium';
     background-color: #222222;
     margin: 0;
     padding: 0;
 }
 
+/******** CAJA DE PRINCIPAL ********/
+#CajaPrincipal {
+    width: 70%;
+    margin: 20px auto;
+    padding: var(--padding-general);
+    background-color: #464646;
+    border: 4px solid var(--color-border);
+    border-radius: 10px; /* Bordes redondeados */
+
+    display: flex; /* contenedor flexible*/
+    flex-direction: column; /* determina cómo se apilan los elementos secundarios */
+    align-items: center; 
+    justify-content: center;
+}
+
 /******** CAJA DE CALCULO ********/
 #calculo {
-  background-color: #bcbcbc;
-
+  background-color: var(--color-fondo);
   margin: 3%;
   width: 60%; 
   border: 2px solid black;
-  padding: 10px; /* Añadir espacio interno */
+  padding: var(--padding-general); /* Añadir espacio interno */
 
-  font-family: 'Franklin Gothic Medium';
+  font-family: var(--font-family);
 }
 
 /******** CAJA DE OPERADORES ********/
@@ -23,8 +47,11 @@ body {
     background-color: #bcbcbc;
     margin: 3%;
     width: 60%; 
-    padding: 10px;
-    background-color: #fff;
+    padding: var(--padding-general);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
     border: 1px solid #ccc;
     
 }
@@ -38,7 +65,11 @@ body {
     border-radius: 5px; /* boton redondeado */
 }
 
-/******** CAJA DE EJECUCION ********/
+#operadores button:active {
+    background-color: rgb(211, 211, 211);
+}
+
+/******** CAJA DE EJECUCION boton tryme ********/
 #tryme {
     background-color: #347936;
     color: white;
@@ -48,11 +79,14 @@ body {
     border-radius: 5px;
 
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium';
+    font-family: var(--font-family);
     text-align: center;
     
     display: inline-block;
    
     margin: 4px 2px;
     cursor: pointer;
+}
+#tryme:active { /* Active, como si fuera un boton*/
+    background-color: #63f368;
 }

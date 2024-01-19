@@ -15,26 +15,29 @@
     <title>cell02 - It's over 9000</title>  
 </head>
 <body>
-    <!-- Caja texto, muestra los números insertados-->
-    <div id="calculo" class="clearfix">
-        <label for="numeros">Añade números:</label>
-        <!-- "input" nos permite escribir ahí directamente-->
-            <input type="text" id="numeros" placeholder="...">
-    </div>
+    <div id="CajaPrincipal">
 
-    <!-- Caja select, muestra lista de los operadores a usar-->
-    <div id="operadores" >
-        <button value="add">+</button>
-        <button value="substract">-</button>
-        <button value="multiply">*</button>
-        <button value="divide">/</button>
-        <button value="percentage">%</button>
-    </div>
+        <!-- Caja texto, muestra los números insertados-->
+        <div id="calculo" class="clearfix">
+            <label for="numeros">Añade números:</label>
+            <!-- "input" nos permite escribir ahí directamente-->
+                <input type="text" id="numeros" placeholder="...">
+        </div>
 
-    <!-- Caja ejecutar, muestra el resultado-->
-    <div id="ejecutar" >
-        <button id="tryme"  onclick="">Try me!</button>
-    </div>
+        <!-- Caja select, muestra lista de los operadores a usar-->
+        <div id="operadores" >
+            <button value="sumar" onclick="agregarOperador('+')">+</button>
+            <button value="restar" onclick="agregarOperador('-')">-</button>
+            <button value="multiplicar" onclick="agregarOperador('*')">*</button>
+            <button value="dividir" onclick="agregarOperador('/')">/</button>
+            <button value="porcentaje" onclick="agregarOperador('%')">%</button>
+        </div>
+
+        <!-- Caja ejecutar, muestra el resultado-->
+        <div id="ejecutar" >
+            <button id="tryme"  onclick="calcularResultado()">Try me!</button>
+        </div>
+    </div>    
 
 </body>
 
